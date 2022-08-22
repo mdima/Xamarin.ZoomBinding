@@ -2,10 +2,26 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleDisplayName</key>
+	<string>ZoomDemo</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.NT2.zoomdemo</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.0</string>
+	<key>CFBundleVersion</key>
+	<string>1.0.0</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>MinimumOSVersion</key>
+	<string>13.0</string>
 	<key>UIDeviceFamily</key>
 	<array>
 		<integer>1</integer>
 		<integer>2</integer>
+	</array>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
@@ -20,31 +36,19 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>MinimumOSVersion</key>
-	<string>8.0</string>
-	<key>CFBundleDisplayName</key>
-	<string>ZoomDemo</string>
-	<key>CFBundleIdentifier</key>
-	<string>com.syndew.zoomdemo</string>
-	<key>CFBundleVersion</key>
-	<string>1.0</string>
-	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
-	<key>CFBundleName</key>
-	<string>ZoomDemo</string>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
-	<key>UIBackgroundModes</key>
+	<key>UIRequiresFullScreen</key>
+	<true/>
+	<key>BGTaskSchedulerPermittedIdentifiers</key>
 	<array>
-		<string>audio</string>
+		<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	</array>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>App would like to use your bluetooth for communication purposes</string>
 	<key>NSBluetoothPeripheralUsageDescription</key>
-	<string>Bluetooth needed to access your headphones</string>
-	<key>NSCameraUsageDescription</key>
-	<string>For Video access during meetings</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>For Audio access during meetings</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>For people to share, we need to access to your photos</string>
+	<string>App would like to use your bluetooth for communication purposes</string>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
 </dict>
 </plist>
